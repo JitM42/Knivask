@@ -11,6 +11,7 @@
 - **Skaft_tjocklek** (number)
 - **Kniv_höjd** (number)
 - **Vägg_tjocklek** (number)
+- **Antal_knivar** (number)
 
 
 
