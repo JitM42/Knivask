@@ -25,6 +25,10 @@
     {
       "name": "Vägg_tjocklek",
       "ioValue": 2
+    },
+    {
+      "name": "Antal_knivar",
+      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -77,31 +81,115 @@
       "name": "Vägg_tjocklek"
     },
     {
-      "atomType": "Molecule",
-      "x": 0.16927083333333331,
-      "y": 0.23716381418092908,
-      "uniqueID": "id-19",
-      "name": "Molecule",
-      "topLevel": false,
-      "allAtoms": [
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.56,
+      "uniqueID": "id-23",
+      "name": "Antal_knivar"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.21614583333333334,
+      "y": 0.23960880195599024,
+      "uniqueID": "id-32",
+      "ioValues": [
         {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-21",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
+          "name": "x length",
+          "ioValue": 154
+        },
+        {
+          "name": "y length",
+          "ioValue": 222
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.12291666666666667,
+      "y": 0.1687041564792176,
+      "uniqueID": "id-36",
+      "name": "bl+sl+vt*2",
+      "ioValues": [
+        {
+          "name": "bl",
+          "ioValue": 70
+        },
+        {
+          "name": "sl",
+          "ioValue": 80
+        },
+        {
+          "name": "vt",
+          "ioValue": 2
         }
       ],
-      "allConnectors": [],
-      "fileTypeVersion": 1
+      "currentEquation": "bl+sl+vt*2"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.13177083333333334,
+      "y": 0.38141809290953543,
+      "uniqueID": "id-43",
+      "name": "vt+(st+vt)*ak",
+      "ioValues": [
+        {
+          "name": "vt",
+          "ioValue": 2
+        },
+        {
+          "name": "st",
+          "ioValue": 20
+        },
+        {
+          "name": "ak",
+          "ioValue": 10
+        }
+      ],
+      "currentEquation": "vt+(st+vt)*ak"
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "bl",
+      "ap1ID": "id-4",
+      "ap2ID": "id-36"
+    },
+    {
+      "ap2Name": "sl",
+      "ap1ID": "id-7",
+      "ap2ID": "id-36"
+    },
+    {
+      "ap2Name": "st",
+      "ap1ID": "id-10",
+      "ap2ID": "id-43"
+    },
+    {
+      "ap2Name": "vt",
+      "ap1ID": "id-16",
+      "ap2ID": "id-36"
+    },
+    {
+      "ap2Name": "vt",
+      "ap1ID": "id-16",
+      "ap2ID": "id-43"
+    },
+    {
+      "ap2Name": "ak",
+      "ap1ID": "id-23",
+      "ap2ID": "id-43"
+    },
+    {
+      "ap2Name": "x length",
+      "ap1ID": "id-36",
+      "ap2ID": "id-32"
+    },
+    {
+      "ap2Name": "y length",
+      "ap1ID": "id-43",
+      "ap2ID": "id-32"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
