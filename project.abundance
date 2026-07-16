@@ -93,8 +93,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.28541666666666665,
-      "y": 0.14425427872860636,
+      "x": 0.2359375,
+      "y": 0.2053789731051345,
       "uniqueID": "id-32",
       "ioValues": [
         {
@@ -160,10 +160,10 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.2171875,
-      "y": 0.6136919315403423,
+      "x": 0.13072916666666667,
+      "y": 0.5158924205378973,
       "uniqueID": "id-104",
-      "name": "New Molecule",
+      "name": "Kniv",
       "ioValues": [
         {
           "name": "Blad_length",
@@ -202,8 +202,8 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.2526041666666667,
-          "y": 0.4292176039119805,
+          "x": 0.24947916666666667,
+          "y": 0.38386308068459657,
           "uniqueID": "id-108",
           "ioValues": [
             {
@@ -234,13 +234,13 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.23697916666666666,
-          "y": 0.5965770171149144,
+          "x": 0.234375,
+          "y": 0.5721271393643031,
           "uniqueID": "id-110",
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 80
+              "ioValue": 70
             },
             {
               "name": "y length",
@@ -457,6 +457,11 @@
           "ap2ID": "id-113"
         },
         {
+          "ap2Name": "x length",
+          "ap1ID": "id-158",
+          "ap2ID": "id-110"
+        },
+        {
           "ap2Name": "sl",
           "ap1ID": "id-161",
           "ap2ID": "id-116"
@@ -469,7 +474,7 @@
         {
           "ap2Name": "x length",
           "ap1ID": "id-161",
-          "ap2ID": "id-110"
+          "ap2ID": "id-108"
         },
         {
           "ap2Name": "height",
@@ -493,6 +498,48 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Move",
+      "x": 0.23333333333333334,
+      "y": 0.5232273838630807,
+      "uniqueID": "id-173",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.14322916666666669,
+      "y": 0.726161369193154,
+      "uniqueID": "id-179",
+      "name": "x + y",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 1
+        },
+        {
+          "name": "y",
+          "ioValue": 1
+        }
+      ],
+      "currentEquation": "x + y"
     }
   ],
   "allConnectors": [
@@ -560,6 +607,11 @@
       "ap2Name": "Bit_diam",
       "ap1ID": "id-62",
       "ap2ID": "id-104"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-104",
+      "ap2ID": "id-173"
     }
   ],
   "unitsKey": "MM",
