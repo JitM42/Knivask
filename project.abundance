@@ -167,15 +167,23 @@
       "ioValues": [
         {
           "name": "Blad_length",
-          "ioValue": 10
+          "ioValue": 70
         },
         {
           "name": "Skaft_length",
-          "ioValue": 10
+          "ioValue": 80
         },
         {
           "name": "Kniv_height",
-          "ioValue": 10
+          "ioValue": 30
+        },
+        {
+          "name": "Bit_diam",
+          "ioValue": 6
+        },
+        {
+          "name": "Skaft_thickness",
+          "ioValue": 20
         }
       ],
       "topLevel": false,
@@ -210,8 +218,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.3083333333333333,
-          "y": 0.5514669926650366,
+          "x": 0.3359375,
+          "y": 0.5354523227383863,
           "uniqueID": "id-109",
           "ioValues": [
             {
@@ -226,13 +234,13 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.253125,
-          "y": 0.6883863080684597,
+          "x": 0.23697916666666666,
+          "y": 0.5965770171149144,
           "uniqueID": "id-110",
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 70
+              "ioValue": 80
             },
             {
               "name": "y length",
@@ -300,8 +308,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.39479166666666665,
-          "y": 0.6028117359413203,
+          "x": 0.4203125,
+          "y": 0.6454767726161369,
           "uniqueID": "id-114",
           "ioValues": [
             {
@@ -376,6 +384,20 @@
           "y": 0.30800000000000005,
           "uniqueID": "id-164",
           "name": "Kniv_height"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0231,
+          "y": 0.6968215158924205,
+          "uniqueID": "id-167",
+          "name": "Bit_diam"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0231,
+          "y": 0.4474327628361858,
+          "uniqueID": "id-170",
+          "name": "Skaft_thickness"
         }
       ],
       "allConnectors": [
@@ -424,7 +446,51 @@
           "ap1ID": "id-116",
           "ap2ID": "id-115"
         },
-        null
+        {
+          "ap2Name": "bl",
+          "ap1ID": "id-158",
+          "ap2ID": "id-116"
+        },
+        {
+          "ap2Name": "bl",
+          "ap1ID": "id-158",
+          "ap2ID": "id-113"
+        },
+        {
+          "ap2Name": "sl",
+          "ap1ID": "id-161",
+          "ap2ID": "id-116"
+        },
+        {
+          "ap2Name": "sl",
+          "ap1ID": "id-161",
+          "ap2ID": "id-113"
+        },
+        {
+          "ap2Name": "x length",
+          "ap1ID": "id-161",
+          "ap2ID": "id-110"
+        },
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-164",
+          "ap2ID": "id-109"
+        },
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-164",
+          "ap2ID": "id-111"
+        },
+        {
+          "ap2Name": "y length",
+          "ap1ID": "id-167",
+          "ap2ID": "id-110"
+        },
+        {
+          "ap2Name": "y length",
+          "ap1ID": "id-170",
+          "ap2ID": "id-108"
+        }
       ],
       "fileTypeVersion": 1
     }
@@ -436,14 +502,34 @@
       "ap2ID": "id-36"
     },
     {
+      "ap2Name": "Blad_length",
+      "ap1ID": "id-4",
+      "ap2ID": "id-104"
+    },
+    {
       "ap2Name": "sl",
       "ap1ID": "id-7",
       "ap2ID": "id-36"
     },
     {
+      "ap2Name": "Skaft_length",
+      "ap1ID": "id-7",
+      "ap2ID": "id-104"
+    },
+    {
       "ap2Name": "st",
       "ap1ID": "id-10",
       "ap2ID": "id-43"
+    },
+    {
+      "ap2Name": "Skaft_thickness",
+      "ap1ID": "id-10",
+      "ap2ID": "id-104"
+    },
+    {
+      "ap2Name": "Kniv_height",
+      "ap1ID": "id-13",
+      "ap2ID": "id-104"
     },
     {
       "ap2Name": "vt",
@@ -469,6 +555,11 @@
       "ap2Name": "y length",
       "ap1ID": "id-43",
       "ap2ID": "id-32"
+    },
+    {
+      "ap2Name": "Bit_diam",
+      "ap1ID": "id-62",
+      "ap2ID": "id-104"
     }
   ],
   "unitsKey": "MM",
