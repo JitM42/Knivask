@@ -12,6 +12,7 @@
 - **Kniv_höjd** (number)
 - **Vägg_tjocklek** (number)
 - **Antal_knivar** (number)
+- **Bit_diam** (number)
 
 
 
