@@ -187,7 +187,7 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 10
+          "ioValue": 70
         },
         {
           "name": "y length",
@@ -201,6 +201,11 @@
       "ap2Name": "bl",
       "ap1ID": "id-4",
       "ap2ID": "id-36"
+    },
+    {
+      "ap2Name": "x length",
+      "ap1ID": "id-4",
+      "ap2ID": "id-58"
     },
     {
       "ap2Name": "sl",
