@@ -29,6 +29,10 @@
     {
       "name": "Antal_knivar",
       "ioValue": 10
+    },
+    {
+      "name": "Bit_diam",
+      "ioValue": 6
     }
   ],
   "topLevel": true,
@@ -194,6 +198,13 @@
           "ioValue": 10
         }
       ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.644,
+      "uniqueID": "id-62",
+      "name": "Bit_diam"
     }
   ],
   "allConnectors": [
