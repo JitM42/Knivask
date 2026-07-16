@@ -1,13 +1,108 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-1",
-    "name": "Knivask",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-1",
+  "name": "Knivask",
+  "ioValues": [
+    {
+      "name": "Blad_length",
+      "ioValue": 70,
+      "currentEquation": "70"
+    },
+    {
+      "name": "Skaft_length",
+      "ioValue": 80
+    },
+    {
+      "name": "Skaft_tjocklek",
+      "ioValue": 20
+    },
+    {
+      "name": "Kniv_höjd",
+      "ioValue": 30
+    },
+    {
+      "name": "Vägg_tjocklek",
+      "ioValue": 2
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-2",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.14,
+      "uniqueID": "id-4",
+      "name": "Blad_length"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.22400000000000003,
+      "uniqueID": "id-7",
+      "name": "Skaft_length"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.30800000000000005,
+      "uniqueID": "id-10",
+      "name": "Skaft_tjocklek"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.39200000000000007,
+      "uniqueID": "id-13",
+      "name": "Kniv_höjd"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.4760000000000001,
+      "uniqueID": "id-16",
+      "name": "Vägg_tjocklek"
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.16927083333333331,
+      "y": 0.23716381418092908,
+      "uniqueID": "id-19",
+      "name": "Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-21",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
+    }
+  ],
+  "allConnectors": [],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
