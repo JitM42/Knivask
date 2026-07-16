@@ -28,7 +28,7 @@
     },
     {
       "name": "Antal_knivar",
-      "ioValue": 10
+      "ioValue": 6
     },
     {
       "name": "Bit_diam",
@@ -103,7 +103,7 @@
         },
         {
           "name": "y length",
-          "ioValue": 222
+          "ioValue": 134
         }
       ]
     },
@@ -146,7 +146,7 @@
         },
         {
           "name": "ak",
-          "ioValue": 10
+          "ioValue": 6
         }
       ],
       "currentEquation": "vt+(st+vt)*ak"
@@ -501,8 +501,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.23333333333333334,
-      "y": 0.5232273838630807,
+      "x": 0.24322916666666666,
+      "y": 0.5012224938875306,
       "uniqueID": "id-173",
       "ioValues": [
         {
@@ -515,7 +515,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 0
+          "ioValue": 55
         },
         {
           "name": "zDist",
@@ -528,18 +528,59 @@
       "x": 0.14322916666666669,
       "y": 0.726161369193154,
       "uniqueID": "id-179",
-      "name": "x + y",
+      "name": "y/2 - vt - st/2",
       "ioValues": [
         {
-          "name": "x",
-          "ioValue": 1
+          "name": "y",
+          "ioValue": 134
         },
         {
-          "name": "y",
-          "ioValue": 1
+          "name": "vt",
+          "ioValue": 2
+        },
+        {
+          "name": "st",
+          "ioValue": 20
         }
       ],
-      "currentEquation": "x + y"
+      "currentEquation": "y/2 - vt - st/2"
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.4427083333333333,
+      "y": 0.45476772616136923,
+      "uniqueID": "id-185",
+      "ioValues": []
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.2932291666666667,
+      "y": 0.2665036674816626,
+      "uniqueID": "id-196",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 15
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.21354166666666669,
+      "y": 0.3740831295843521,
+      "uniqueID": "id-200",
+      "name": "kh/2",
+      "ioValues": [
+        {
+          "name": "kh",
+          "ioValue": 30
+        }
+      ],
+      "currentEquation": "kh/2"
     }
   ],
   "allConnectors": [
@@ -574,9 +615,19 @@
       "ap2ID": "id-104"
     },
     {
+      "ap2Name": "st",
+      "ap1ID": "id-10",
+      "ap2ID": "id-179"
+    },
+    {
       "ap2Name": "Kniv_height",
       "ap1ID": "id-13",
       "ap2ID": "id-104"
+    },
+    {
+      "ap2Name": "kh",
+      "ap1ID": "id-13",
+      "ap2ID": "id-200"
     },
     {
       "ap2Name": "vt",
@@ -589,9 +640,19 @@
       "ap2ID": "id-43"
     },
     {
+      "ap2Name": "vt",
+      "ap1ID": "id-16",
+      "ap2ID": "id-179"
+    },
+    {
       "ap2Name": "ak",
       "ap1ID": "id-23",
       "ap2ID": "id-43"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-32",
+      "ap2ID": "id-196"
     },
     {
       "ap2Name": "x length",
@@ -604,6 +665,11 @@
       "ap2ID": "id-32"
     },
     {
+      "ap2Name": "y",
+      "ap1ID": "id-43",
+      "ap2ID": "id-179"
+    },
+    {
       "ap2Name": "Bit_diam",
       "ap1ID": "id-62",
       "ap2ID": "id-104"
@@ -612,6 +678,16 @@
       "ap2Name": "geometry",
       "ap1ID": "id-104",
       "ap2ID": "id-173"
+    },
+    {
+      "ap2Name": "yDist",
+      "ap1ID": "id-179",
+      "ap2ID": "id-173"
+    },
+    {
+      "ap2Name": "height",
+      "ap1ID": "id-200",
+      "ap2ID": "id-196"
     }
   ],
   "unitsKey": "MM",
